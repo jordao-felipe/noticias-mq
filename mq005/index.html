@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamengo em Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/medias-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Notícias do Flamengo</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">INÍCIO</a></li>
+                <li><a href="#">NOTÍCIAS</a></li>
+                <li><a href="#">INGRESSOS</a></li>
+                <li><a href="#">SÓCIO-TORCEDOR</a></li>
+                <li><a href="#">LOJA</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Flamengo acerta venda de Werton para clube português</h2>
+
+            <img id="foto-pqn" src="imagens/werton-fla.jpg" alt="werton jogador do Flamengo">
+            <img id="foto-med" src="imagens/werton-fla1.jpg" alt="werton jogador do Flamengo">
+            <img id="foto-grd" src="imagens/werton-fla2.jpg" alt="werton jogador do Flamengo">
+            <h3>Em negociação com o Leixões, Rubro-Negro mantém 30% dos direitos do atleta. Veja o valor da venda</h3>
+            <p>
+                O Flamengo acertou a venda de Werton para o Leixões, de Portugal. A negociação foi finalizada em 1 milhão de euros - cerca de R$ 5,8 milhões na cotação atual - por 70% dos direitos econômicos.
+            </p>
+            <p>
+                O atacante de 20 anos assinará por quatro temporadas, e o Flamengo mantém 30% dos direitos para lucro em uma venda futura. Werton ficará à disposição do técnico Tite para a partida contra o Fortaleza, nesta quinta-feira, no Maracanã.
+            </p>
+            <p>
+                A partida será a última do Flamengo com os desfalques da Copa América. Com a ausência de Bruno Henrique e Cebolinha, o jogador surge como uma das opçõe
+            </p>
+            <p>
+                O jovem foi utilizado por Tite contra o Cruzeiro e contra o Cuiabá. No último jogo, Werton saiu do banco, atuou por 38 minutos, antes de ser substituído pelo treinador. Em coletiva, Tite explicou a decisão.
+            </p>
+            <p>
+                - O jogo se apresentou, tentamos usar dois pivôs, substituímos os meninos para criar as alternativas que precisámos e fica aqui o respaldo aos meninos, o Lorran e o Werton - analisou.
+            </p>
+            <p>
+                Pelo profissional, além desses dois confrontos, Werton representou o time no Carioca enquanto o Flamengo fazia pré-temporada nos Estados Unidos. O atacante entrou em campo em três jogos pela Copinha: três gols e uma assistência.
+            </p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+        
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        } 
+    </script>
+</body>
+</html>

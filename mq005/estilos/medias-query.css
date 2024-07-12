@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    span#burger {
+        display: none;
+    }
+    menu{
+        display: block;
+        
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    main{
+        max-width: 768px;
+    }
+    article > img{
+        display: block;
+        margin: auto;   
+        width: 700px;
+        padding-bottom: 10px;
+    }
+img#foto-pqn{display: none;}
+img#foto-med{display: block;}
+img#foto-grd{display: none;}
+    
+}
+
+    
+
+
